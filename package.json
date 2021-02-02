@@ -28,5 +28,18 @@
   "bugs": {
     "url": "https://github.com/taharcodes/javascript-sandbox/issues"
   },
-  "homepage": "https://github.com/taharcodes/javascript-sandbox#readme"
+  "homepage": "https://github.com/taharcodes/javascript-sandbox#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1",
+    "prettier": "^2.2.1"
+  }
 }
