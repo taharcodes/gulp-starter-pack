@@ -2,6 +2,7 @@ const { src, dest, watch, series } = require('gulp')
 const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
 const cssnano = require('cssnano')
+const rename = require('gulp-rename')
 const terser = require('gulp-terser')
 const browsersync = require('browser-sync').create()
 
@@ -10,6 +11,11 @@ function scssTask() {
   return src('app/scss/**/*.scss', { sourcemaps: true })
     .pipe(sass())
     .pipe(postcss([cssnano()]))
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
     .pipe(dest('dist/css', { sourcemaps: '.' }))
 }
 
@@ -17,6 +23,11 @@ function scssTask() {
 function jstask() {
   return src('app/js/**/*.js', { sourcemaps: true })
     .pipe(terser())
+    .pipe(
+      rename({
+        suffix: '.min',
+      })
+    )
     .pipe(dest('dist/js', { sourcemaps: '.' }))
 }
 
