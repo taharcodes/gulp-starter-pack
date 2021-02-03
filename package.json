@@ -4,7 +4,7 @@
   "description": "JavaScript Sandbox starter files.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp"
   },
   "repository": {
     "type": "git",
