@@ -29,7 +29,7 @@ gulp-starter-pack
 ├── 📄.eslintrc.json
 ├── 📄.gitignore
 ├── 📄.prettierrc
-├── ♥️gulpfile.js
+├── 📄gulpfile.js
 ├── 📄index.html
 ├── 🔒LICENSE
 ├── 📄package-lock.json
